@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Ganti dengan nama folder jika tidak di root (contoh: /ci3app/)
+    RewriteBase /wagateway/
+
+    # Jika file atau folder tidak ditemukan, arahkan ke index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L]
+
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+ErrorDocument 404 index.php
+</IfModule>
