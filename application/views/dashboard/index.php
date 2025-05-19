@@ -51,55 +51,12 @@
     </div>
 
     <div class="row">
-    <div class="col-md-8">
-        <div class="card">
-    </div>
-        <div class="row">
-            <div class="col-md-6">
-            
-            </div>
-
-            <div class="col-md-6">
-                
-            </div>
+        <div class="col-md-8">
+            <?php $this->load->view($bulk) ?>
         </div>
-        
+        <div class="col-md-4">
+            <?php $this->load->view($result) ?>
+        </div>
     </div>
 
-    <div class="col-md-4">
-        <div class="info-box mb-3 bg-warning">
-        <span class="info-box-icon"><i class="fas fa-tag"></i></span>
-
-        <div class="info-box-content">
-            <span class="info-box-text">Inventory</span>
-            <span class="info-box-number">5,200</span>
-        </div>
-        </div>
-        <div class="info-box mb-3 bg-success">
-        <span class="info-box-icon"><i class="far fa-heart"></i></span>
-
-        <div class="info-box-content">
-            <span class="info-box-text">Mentions</span>
-            <span class="info-box-number">92,050</span>
-        </div>
-        </div>
-        <div class="info-box mb-3 bg-danger">
-        <span class="info-box-icon"><i class="fas fa-cloud-download-alt"></i></span>
-
-        <div class="info-box-content">
-            <span class="info-box-text">Downloads</span>
-            <span class="info-box-number">114,381</span>
-        </div>
-        </div>
-        <div class="info-box mb-3 bg-info">
-        <span class="info-box-icon"><i class="far fa-comment"></i></span>
-
-        <div class="info-box-content">
-            <span class="info-box-text">Direct Messages</span>
-            <span class="info-box-number">163,921</span>
-        </div>
-        </div>
-        
-    </div>
-    </div>
 </div>
